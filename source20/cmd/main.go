@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	. "muxi.leetcode.com/source20"
-	. "muxi.leetcode.com/base/link"
 )
 
 func main() {
@@ -14,18 +13,28 @@ func main() {
 	//result := TwoSum(input, target)
 
 	//2-AddTwoNumbers
-	input1 := []int{2,4,3}
-	l1 := GenLinkList(input1)
+	//input1 := []int{2,4,3}
+	//l1 := GenLinkList(input1)
+	//
+	//input2 := []int{5,6,4}
+	//l2 := GenLinkList(input2)
+	//result := AddTwoNumbers(l1, l2)
+	//tmp := result
+	//for tmp != nil {
+	//	fmt.Println("tmp:", tmp.Val)
+	//	tmp = tmp.Next
+	//}
 
-	input2 := []int{5,6,4}
-	l2 := GenLinkList(input2)
-	result := AddTwoNumbers(l1, l2)
-	tmp := result
-	for tmp != nil {
-		fmt.Println("tmp:", tmp.Val)
-		tmp = tmp.Next
-	}
+	//4-
+	//result := FindMedianSortedArrays([]int{3,4}, []int{1})
 
+
+	//5-
+	//result := LongestPalindrome("cbbd")
+
+
+	//10-
+	result := IsMatch("mississippi", "mis*is*p*.")
 
 	//15-threeSum
 	//input := []int{-1, 0, 1, 2, -1, -4}
