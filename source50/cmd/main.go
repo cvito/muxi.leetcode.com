@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	. "muxi.leetcode.com/source20"
+	. "muxi.leetcode.com/source50"
 )
 
 func main() {
@@ -34,7 +34,10 @@ func main() {
 
 
 	//10-
-	result := IsMatch("mississippi", "mis*is*p*.")
+	//result := IsMatch("mississippi", "mis*is*p*.")
+
+	//11-
+	result := MaxArea([]int{1,8,6,2,5,4,8,3,7})
 
 	//15-threeSum
 	//input := []int{-1, 0, 1, 2, -1, -4}

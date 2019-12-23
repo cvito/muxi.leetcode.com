@@ -1,4 +1,4 @@
-package source20
+package source50
 
 /**
 地址：https://leetcode-cn.com/problems/two-sum/
