@@ -37,7 +37,7 @@ func main() {
 	//result := IsMatch("mississippi", "mis*is*p*.")
 
 	//11-
-	result := MaxArea([]int{1,8,6,2,5,4,8,3,7})
+	//result := MaxArea([]int{1,8,6,2,5,4,8,3,7})
 
 	//15-threeSum
 	//input := []int{-1, 0, 1, 2, -1, -4}
@@ -49,6 +49,19 @@ func main() {
 	//input := []int{-1, 0, 1, 2, -1, -4}
 	//input := []int{0, 0, -2}
 	//result := ThreeSumClosest(input, 1)
+
+
+	//18-
+	//result := FourSum([]int{-1,0,-5,-2,-2,-4,0,1,-2}, -9)
+
+	//26-
+	//result := RemoveDuplicates([]int{0,0,1,1,1,2,2,3,3,4})
+
+	//31-
+	//result := []int{1,1,5}
+	//NextPermutation(result)
+
+	result := Search([]int{5,1,3}, 5)
 
 
 	fmt.Println("result: ", result)
