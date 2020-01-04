@@ -60,3 +60,23 @@ func commProgress(root, p, q *TreeNode) (*TreeNode, int) {
 	}
 	return root, leftCount + rightCount + count
 }
+
+
+//-==================
+/**
+  用时：12ms
+  内存：7.1MB
+   */
+func lowestCommonAncestor_v2(root, p, q *TreeNode) *TreeNode {
+	if root == nil || root == p || root == q {
+		return root
+	}
+	leftNode := lowestCommonAncestor_v2(root.Left, p, q)
+	rightNode := lowestCommonAncestor_v2(root.Right, p, q)
+	if leftNode == nil {
+		return rightNode
+	} else if rightNode == nil {
+		return leftNode
+	}
+	return root
+}
