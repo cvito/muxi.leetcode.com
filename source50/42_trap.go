@@ -1,7 +1,6 @@
 package source50
 
 import (
-	"fmt"
 	"math"
 )
 
