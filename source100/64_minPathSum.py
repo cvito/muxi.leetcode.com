@@ -33,9 +33,17 @@ class Solution_V2:
                 dp[i][j] = grid[i][j] + min(dp[i-1][j], dp[i][j-1])
         return dp[len(grid)-1][len(grid[0])-1]
 
+class Solution_V3:
+    def minPathSum(self, grid: List[List[int]]) -> int:
+        if not grid: return 0
+        for i in range(len(grid)):
+            for j in range(len(grid[0])):
+                if i == j == 0: continue
+                elif i == 0: grid[i][j] = grid[i][j-1] + grid[i][j]
+                elif j == 0: grid[i][j] = grid[i-1][j] + grid[i][j]
+                else: grid[i][j] = min(grid[i-1][j], grid[i][j-1]) + grid[i][j]
+        return grid[-1][-1]
 
-s = Solution_V2()
-rsp = s.minPathSum([
-  [1,3,1]
-])
+s = Solution_V3()
+rsp = s.minPathSum([[1, 3, 1], [1, 5, 1], [4, 2, 1]])
 print(rsp)
